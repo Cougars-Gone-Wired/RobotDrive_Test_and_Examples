@@ -1,6 +1,6 @@
 package howCodeWorks;
 
-public class Mecanum {
+public class Mecanum_Cartesian {
 
 	// 459-491
 	public static void mecanumDrive_Cartesian(double x, double y, double rotation, double gyroAngle) {
