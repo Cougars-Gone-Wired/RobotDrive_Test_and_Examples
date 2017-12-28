@@ -9,11 +9,6 @@ public class Caller {
 	private static double mecanum_X_Axis_Invert = 1;
 	private static double mecanum_Rotate_Axis_Invert = 1;
 	
-	public static boolean frontLeftInvert = false;
-	public static boolean frontRightInvert = false;
-	public static boolean rearLeftInvert = false;
-	public static boolean rearRightInvert = false;
-	
 	public static void main(String[] args) {
 
 		double drive_speed = 0;
@@ -23,7 +18,7 @@ public class Caller {
 		double mecanum_polar_direction = 0; // in degrees
 		double mecanum_polar_turn = 0;
 		
-		double arcade_LS_Y_Axis = 1;
+		double arcade_LS_Y_Axis = 0;
 		double arcade_RS_X_Axis = 0;
 		
 		double tank_LS_Y_Axis = 0;
