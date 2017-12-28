@@ -17,18 +17,11 @@ public class RobotDrive {
 	private static double m_frontRightMotorInvert;
 	private static double m_rearRightMotorInvert;
 
-	/*
-	 * public RobotDrive(double m_frontLeftMotor, double m_rearLeftMotor, double
-	 * m_frontRightMotor, double m_rearRightMotor) { this.m_frontLeftMotor =
-	 * m_frontLeftMotor; this.m_rearLeftMotor = m_rearLeftMotor;
-	 * this.m_frontRightMotor = m_frontRightMotor; this.m_rearRightMotor =
-	 * m_rearRightMotor; }
-	 */
-
 	// 560-578
 	public static void setLeftRightMotorOutputs(double leftOutput, double rightOutput) {
 		invert(false, false, true, true);
 
+		// so that we don't end up with -0
 		if (leftOutput == 0) {
 			leftOutput = Math.abs(leftOutput);
 		}
@@ -80,8 +73,7 @@ public class RobotDrive {
 		return out;
 	}
 
-	public static void invert(boolean m_frontLeftMotor, boolean m_rearLeftMotor, boolean m_frontRightMotor,
-			boolean m_rearRightMotor) {
+	public static void invert(boolean m_frontLeftMotor, boolean m_rearLeftMotor, boolean m_frontRightMotor, boolean m_rearRightMotor) {
 		if (m_frontLeftMotor) {
 			m_frontLeftMotorInvert = -1;
 		} else {

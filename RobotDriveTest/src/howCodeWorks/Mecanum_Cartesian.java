@@ -7,7 +7,7 @@ public class Mecanum_Cartesian {
 		
 		double xIn = x;
 		double yIn = y;
-		//yIn = -yIn;
+		yIn = -yIn;
 
 		double[] rotated = RobotDrive.rotateVector(xIn, yIn, gyroAngle);
 		xIn = rotated[0];
