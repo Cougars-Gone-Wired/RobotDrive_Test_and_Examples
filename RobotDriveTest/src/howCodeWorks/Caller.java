@@ -51,7 +51,7 @@ public class Caller {
 		Mecanum_Cartesian.mecanumDrive_Cartesian(mecanum_X_Axis_Invert * (mecanum_LS_X_Axis), mecanum_Y_Axis_Invert * (mecanum_LS_Y_Axis), mecanum_Rotate_Axis_Invert * (mecanum_RS_X_Axis), 0.0);
 		System.out.println("Mecanum Drive:");
 		System.out.println(RobotDrive.m_frontLeftMotor + "  " + RobotDrive.m_frontRightMotor);
-		System.out.println(RobotDrive.m_rearLeftMotor + "  " + RobotDrive.m_rearRightMotor + "\n");
+		System.out.println(RobotDrive.m_rearLeftMotor + "  " + RobotDrive.m_rearRightMotor);
 	}
 
 }
