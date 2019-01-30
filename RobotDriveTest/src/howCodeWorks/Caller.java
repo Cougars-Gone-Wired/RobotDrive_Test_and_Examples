@@ -19,7 +19,7 @@ public class Caller {
 		double mecanum_polar_turn = 0;
 		
 		double arcade_LS_Y_Axis = 0;
-		double arcade_RS_X_Axis = 0;
+		double arcade_RS_X_Axis = 1;
 		
 		double tank_LS_Y_Axis = 0;
 		double tank_RS_Y_Axis = 0;

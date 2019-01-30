@@ -18,7 +18,7 @@ public class H {
 	
 	private RobotDrive robotDrive;
 	
-	private CANTalon centerWheelMotor;
+	//private CANTalon centerWheelMotor;
 	private Solenoid hDrop;
 	
 	boolean downTrue;
@@ -27,11 +27,11 @@ public class H {
 		robotDrive.tankDrive(mobilityStick.getRawAxis(Laxis), mobilityStick.getRawAxis(Raxis));
 		
 		if (mobilityStick.getRawButton(Lbumper)) {
-			centerWheelMotor.set(-1);
+		//	centerWheelMotor.set(-1);
 		} else if (mobilityStick.getRawButton(Rbumper)) {
-			centerWheelMotor.set(1);
+			//centerWheelMotor.set(1);
 		} else {
-			centerWheelMotor.set(0);
+			//centerWheelMotor.set(0);
 		}
 	}
 	

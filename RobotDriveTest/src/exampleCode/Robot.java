@@ -45,10 +45,10 @@ public class Robot extends IterativeRobot {
 	
 	RobotDrive robotDrive;
 	
-	CANTalon frontLeftMotor;
-	CANTalon frontRightMotor;
-	CANTalon backLeftMotor;
-	CANTalon backRightMotor;
+	//CANTalon frontLeftMotor;
+	//CANTalon frontRightMotor;
+	//CANTalon backLeftMotor;
+	//CANTalon backRightMotor;
 	
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -61,14 +61,14 @@ public class Robot extends IterativeRobot {
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
 		
-		frontLeftMotor = new CANTalon(FRONTLEFTPORT);
-		frontRightMotor = new CANTalon(FRONTRIGHTPORT);
-		backLeftMotor = new CANTalon(BACKLEFTPORT);
-		backRightMotor = new CANTalon(BACKRIGHTPORT);
+		//frontLeftMotor = new CANTalon(FRONTLEFTPORT);
+		//frontRightMotor = new CANTalon(FRONTRIGHTPORT);
+		//backLeftMotor = new CANTalon(BACKLEFTPORT);
+		//backRightMotor = new CANTalon(BACKRIGHTPORT);
 		
 		mobilityStick = new Joystick(MOBILITYSTICK);
 		
-		robotDrive = new RobotDrive(frontLeftMotor, frontRightMotor, backLeftMotor, backRightMotor);
+		//robotDrive = new RobotDrive(frontLeftMotor, frontRightMotor, backLeftMotor, backRightMotor);
 	}
 
 	/**
@@ -155,19 +155,19 @@ public class Robot extends IterativeRobot {
 		return robotDrive;
 	}
 
-	public CANTalon getFrontLeftMotor() {
-		return frontLeftMotor;
-	}
+	//public CANTalon getFrontLeftMotor() {
+	//	return frontLeftMotor;
+	//}
 
-	public CANTalon getFrontRightMotor() {
-		return frontRightMotor;
-	}
+	//public CANTalon getFrontRightMotor() {
+	//	return frontRightMotor;
+	//}
 
-	public CANTalon getBackLeftMotor() {
-		return backLeftMotor;
-	}
+	//public CANTalon getBackLeftMotor() {
+	//	return backLeftMotor;
+	//}
 
-	public CANTalon getBackRightMotor() {
-		return backRightMotor;
-	}
+	//public CANTalon getBackRightMotor() {
+	//	return backRightMotor;
+	//}
 }
